@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.center-wrapper {
+    width: 960px;
+    margin: 61px auto 0;
+}
+
+h1{
+    font-size: 0;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 16px 0 16px 19px;
+}
+
+.todo-list-wrapper {
+    float: left;
+    width: 470px;
+}
+
+article {
+    background: #fff;
+    margin: 20px 0 0;
+    min-height: 136px;
+}
+
+article:first-of-type{
+    margin: 29px 0 0;
+}
+
+p {
+    padding: 7px 0 0 20px;
+    color: #bbbbbb;
+    font-size: 14px;
+}
+
+.controll-wrapper * {
+    float: left;
+}
+
+.controll-wrapper {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.delet-btn {
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    margin: 17px 0 0 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+} 
+
+.delet-btn span {
+    height: 2px;
+    width: 12px;
+    background: #d80027;
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+
+.delet-btn span::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 12px;
+    background: #d80027;
+    transform: rotate(90deg);
+}
+
+.suspend-btn {
+    float: right;
+    padding: 0;
+    margin: 21px 22px 0 0;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: url(../img/str.png) center center no-repeat;
+    cursor: pointer;
+}
+
+.add-todo-wrapper {
+    float: right;
+    width: 470px;
+}
+
+form {
+    background: #fff;
+    padding: 26px 42px 11px 40px;
+    margin-top: 29px;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    font-size: 14px;
+    color: #8993ad;
+    margin-left: 4px;
+}
+
+input, textarea {
+    border: 1px solid #ebebeb;
+    background: #f5f5f5;
+    resize: none;
+    margin: 7px 0 25px;
+    padding: 0 14px;
+    font-size: 16px;
+}
+
+#title {
+    width: 360px;
+    height: 43px;
+}
+
+#description {
+    width: 360px;
+    height: 188px;
+    padding: 20px 14px;
+}
+
+.add-btn {
+    border: none;
+    background: #2174fd;
+    width: 224px;
+    height: 55px;
+    margin-top: 1px;
+}
+
+.add-btn[value]{
+    color: #fff;
+    font-size: 16px;
+}
+
+.empty-todo {
+    padding: 74px 0 0 0;
+    font-size: 16px;
+    color: #8993ad;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

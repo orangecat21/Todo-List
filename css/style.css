@@ -43,9 +43,10 @@ article:first-of-type{
 }
 
 p {
-    padding: 7px 0 0 20px;
+    padding: 7px 20px 15px;
     color: #bbbbbb;
     font-size: 14px;
+    word-break: break-all;
 }
 
 .controll-wrapper * {
